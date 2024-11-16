@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="l_estudiante.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>Libreta</title>
+    <script>
+        function login() {
+            window.location.href = 'login.html';
+        }
+        function principal() {
+            window.location.href = 'principal_estudiante.html';
+        }
+        function pagos() {
+            window.location.href = 'pagos_estudiante.html';
+        }
+        function bandeja_e() {
+            window.location.href = 'Bandeja_e_estudiante.html';
+        }
+    </script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row vh-100">
+            <div class="col-3 left-rectangle d-flex flex-column align-items-center justify-content-center">
+                <img src="logo.jpg" alt="Logo" class="img-fluid rounded-circle mb-3">
+                <h3 class="text-center">ACADEMIA PRE-CADETE PEDRO PAULET</h3>
+                <div class="user-profile text-center mb-3">
+                    <img src="usuario.jpg" alt="Usuario" class="img-fluid rounded-circle mb-2">
+                    <p>Juan Diego Quispe Daniero</p>
+                </div>
+                <button class="btn mb-2" onclick="principal()">
+                    <i class="bi bi-pencil-square"></i> Principal
+                </button>
+                <button class="btn mb-2" onclick="pagos()">
+                    <i class="bi bi-cash-stack"></i> Pagos
+                </button>
+                <button class="btn" onclick="bandeja_e()">
+                    <i class="bi bi-envelope"></i> Bandeja de entrada
+                </button>
+                <button class="btn exit-btn position-absolute" style="bottom: 10px; right: 10px;" onclick="login()">
+                    <i class="bi bi-box-arrow-right"></i>
+            </div>
+            <div class="col-9 right-square">
+                <div class="top-rectangle d-flex align-items-center p-3">
+                    <button class="btn btn-transparent small-btn me-2" onclick="principal()">
+                        <i class="bi bi-arrow-left text-grey"></i>
+                    </button>
+                    <h5 class="text-center flex-grow-1">Detalle de asistencia</h5>
+                </div>                
+                <div class="bottom-square d-flex flex-column p-3">
+                    <div class="scrollable-container">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2 class="mt-4">Libreta de Notas</h2>
+                                    <table class="table table-bordered mt-3">
+                                        <thead>
+                                            <tr>
+                                                <th>Curso</th>
+                                                <th>Competencia</th>
+                                                <th>Nota 1</th>
+                                                <th>Nota 2</th>
+                                                <th>Nota 3</th>
+                                                <th>Nota Final</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            
+                                            <tr>
+                                                <td rowspan="4">Comunicación</td>
+                                                <td>Comprensión Lectora</td>
+                                                <td>8.5</td>
+                                                <td>9.0</td>
+                                                <td>8.0</td>
+                                                <td rowspan="4">8.5</td> 
+                                            </tr>
+                                            <tr>
+                                                <td>Producción Escrita</td>
+                                                <td>9.0</td>
+                                                <td>8.5</td>
+                                                <td>9.5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Expresión Oral</td>
+                                                <td>7.5</td>
+                                                <td>8.0</td>
+                                                <td>8.5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Literatura</td>
+                                                <td>9.5</td>
+                                                <td>9.0</td>
+                                                <td>10.0</td>
+                                            </tr>
+                                            
+                                            
+                                            <tr>
+                                                <td rowspan="4">Matemáticas</td>
+                                                <td>Álgebra</td>
+                                                <td>8.0</td>
+                                                <td>8.5</td>
+                                                <td>7.5</td>
+                                                <td rowspan="4">8.0</td> 
+                                            </tr>
+                                            <tr>
+                                                <td>Geometría</td>
+                                                <td>9.0</td>
+                                                <td>8.0</td>
+                                                <td>9.5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Estadística</td>
+                                                <td>7.0</td>
+                                                <td>8.0</td>
+                                                <td>7.5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Matemáticas Aplicadas</td>
+                                                <td>8.5</td>
+                                                <td>9.0</td>
+                                                <td>8.0</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="table table-bordered mt-3">
+                                        <thead>
+                                            <tr>
+                                                <th>Aspecto formativo</th>
+                                                <th>Nota 1</th>
+                                                <th>Nota 2</th>
+                                                <th>Nota 3</th>
+                                                <th>Nota Final</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Puntualidad</td>
+                                                <td>8.5</td>
+                                                <td>9.0</td>
+                                                <td>8.0</td>
+                                                <td>8.5</td> 
+                                            </tr>
+                                    
+                                            
+                                            <tr>
+                                                <td>Presentacion Persona</td>
+                                                <td>8.0</td>
+                                                <td>8.5</td>
+                                                <td>7.5</td>
+                                                <td>8.0</td> 
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                          
+            </div>
+        </div>
+    </div>
+</body>
+</html>

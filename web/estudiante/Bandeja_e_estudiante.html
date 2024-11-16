@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Bandeja_e_estudiante.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>Bandeja de entrada</title>
+    <script>
+        function login() {
+            window.location.href = 'login.html';
+        }
+        function principal() {
+            window.location.href = 'principal_estudiante.html';
+        }
+        function pagos() {
+            window.location.href = 'pagos_estudiante.html';
+        }
+        function bandeja_e() {
+            window.location.href = 'Bandeja_e_estudiante.html';
+        }
+    </script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row vh-100">
+            <div class="col-3 left-rectangle d-flex flex-column align-items-center justify-content-center">
+                <img src="logo.jpg" alt="Logo" class="img-fluid rounded-circle mb-3">
+                <h3 class="text-center">ACADEMIA PRE-CADETE PEDRO PAULET</h3>
+                <div class="user-profile text-center mb-3">
+                    <img src="usuario.jpg" alt="Usuario" class="img-fluid rounded-circle mb-2">
+                    <p>Juan Diego Quispe Daniero</p>
+                </div>
+                <button class="btn mb-2" onclick="principal()">
+                    <i class="bi bi-pencil-square"></i> Principal
+                </button>
+                <button class="btn mb-2" onclick="pagos()">
+                    <i class="bi bi-cash-stack"></i> Pagos
+                </button>
+                <button class="btn" onclick="bandeja_e()">
+                    <i class="bi bi-envelope"></i> Bandeja de entrada
+                </button>
+                <button class="btn exit-btn position-absolute" style="bottom: 10px; right: 10px;" onclick="login()">
+                    <i class="bi bi-box-arrow-right"></i>
+            </div>
+            <div class="col-9 right-square">
+                <div class="top-rectangle d-flex align-items-center p-3">
+                    <button onclick="principal()" class="btn btn-transparent small-btn me-2" >
+                        <i class="bi bi-arrow-left text-grey"></i>
+                    </button>
+                </div>                
+                <div class="bottom-square d-flex flex-column p-3">
+                    <div class="scrollable-container">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2 class="mt-4">Comunicados de la Institución</h2>
+                                    <table class="table table-bordered mt-3">
+                                        <thead>
+                                            <tr>
+                                                <th>Asunto</th>
+                                                <th>Descripción</th>
+                                                <th>Fecha</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Reunión de Padres</td>
+                                                <td>Convocatoria a la reunión de padres de familia para el próximo martes.</td>
+                                                <td>10/11/2024</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Exámenes Finales</td>
+                                                <td>Información sobre el cronograma de exámenes finales del ciclo escolar.</td>
+                                                <td>15/11/2024</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cierre de Inscripciones</td>
+                                                <td>Último día para inscripciones de nuevos alumnos es el 30 de noviembre.</td>
+                                                <td>20/11/2024</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Vacaciones de Verano</td>
+                                                <td>Las vacaciones de verano comenzarán el 5 de diciembre.</td>
+                                                <td>25/11/2024</td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scrollable-container">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2 class="mt-4">Reportes de los Docentes</h2>
+                                    <table class="table table-bordered mt-3">
+                                        <thead>
+                                            <tr>
+                                                <th>Remitente</th>
+                                                <th>Descripción</th>
+                                                <th>Sanción</th>
+                                                <th>Fecha</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Prof. Juan Pérez</td>
+                                                <td>Inasistencia injustificada de un estudiante.</td>
+                                                <td>Amonestación verbal</td>
+                                                <td>01/11/2024</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Prof. María López</td>
+                                                <td>Comportamiento inapropiado en clase.</td>
+                                                <td>Suspensión de una semana</td>
+                                                <td>02/11/2024</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Prof. Carlos Fernández</td>
+                                                <td>Entrega tardía de tareas.</td>
+                                                <td>Amonestación escrita</td>
+                                                <td>03/11/2024</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Prof. Ana Torres</td>
+                                                <td>Falta de respeto hacia el docente.</td>
+                                                <td>Suspensión de dos semanas</td>
+                                                <td>04/11/2024</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Prof. Juan Pérez</td>
+                                                <td>Inasistencia injustificada de un estudiante.</td>
+                                                <td>Amonestación verbal</td>
+                                                <td>01/11/2024</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Prof. María López</td>
+                                                <td>Comportamiento inapropiado en clase.</td>
+                                                <td>Suspensión de una semana</td>
+                                                <td>02/11/2024</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Prof. Carlos Fernández</td>
+                                                <td>Entrega tardía de tareas.</td>
+                                                <td>Amonestación escrita</td>
+                                                <td>03/11/2024</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Prof. Ana Torres</td>
+                                                <td>Falta de respeto hacia el docente.</td>
+                                                <td>Suspensión de dos semanas</td>
+                                                <td>04/11/2024</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                          
+            </div>
+        </div>
+    </div>
+</body>
+</html>
